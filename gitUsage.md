@@ -83,4 +83,7 @@
 ` git tag tagName commitID`  给commitID添加标签tagName  
 ` git show tagName `    显示tagName详细信息  
 ` git tag -a tagName -m "illustration" `    创建带有说明的标签，用-a指定标签名，-m指定说明文字  
-
+`git push origin tagName` 可以推送一个本地标签  
+`git push origin --tags`    可以推送全部未推送过的本地标签  
+`git tag -d tagName`  可以删除一个本地标签  
+`git push origin :refs/tags/tagName`  可以删除一个远程标签  
