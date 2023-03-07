@@ -1,7 +1,8 @@
 # linux 命令行
 
 
-ctrl + alt + T
+``ctrl + alt + T``  
+打开终端  
 
 ## cd
 > change directory

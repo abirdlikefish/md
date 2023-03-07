@@ -18,8 +18,9 @@
 
 
 #### 创建
-`create database [if not exists] databaseName_ [default charset] [collate] ;`
-```
+`create database [if not exists] databaseName_ [default charset] [collate] ;`创建数据库  
+
+``
 create table tableName_(
     fieldName1_ fieldType1_ [comment 'comment_'],
     fieldName2_ fieldType2_ [comment 'comment_'],
@@ -27,7 +28,7 @@ create table tableName_(
     ...
     fieldNamen_ fieldTypen_ [comment 'comment_']
 )[comment 'comment_'];
-```
+``
 创建表  
 
 ##### 数据类型
@@ -93,7 +94,7 @@ create table tableName_(
 > Data Query Language
 
 ```
-select fileName1_ [AS nickName1_],fileName2_ [AS nickName2_],... from tableName_ [where condition_] 
+select [distinct] fileName1_ [AS nickName1_],fileName2_ [AS nickName2_],... from tableName_ [where condition_] 
 [group by fileName_] [having condition_] [order by fieldName1_ asc,fieldName2_ desc,...] [limit number1_,number2_];
 
 ```
@@ -103,3 +104,12 @@ select fileName1_ [AS nickName1_],fileName2_ [AS nickName2_],... from tableName_
 
 ## DCL
 > Data Control Language
+
+`use mysql;` + `select * from user; `  查询用户  
+`create user 'username_'@'hostname_' identified by 'passworld'; `   创建新用户  
+`alter user 'username_'@'hostname_' identified with mysql_native_passworld by 'newPassworld'; `   修改用户密码   
+`drop user 'username_'@'hostname_'; `   删除用户  
+`grant permissions_ on databaseName_.tableName_ to 'username_'@'hostname_';`    授予权限  
+`revoke permissions_ on databaseName_.tableName_ to 'username_'@'hostname_';`    删除权限  
+
+![](sqlnote5.png)  
