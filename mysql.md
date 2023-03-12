@@ -20,15 +20,15 @@
 #### 创建
 `create database [if not exists] databaseName_ [default charset] [collate] ;`创建数据库  
 
-``
+```
 create table tableName_(
-    fieldName1_ fieldType1_ [comment 'comment_'],
-    fieldName2_ fieldType2_ [comment 'comment_'],
-    fieldName3_ fieldType3_ [comment 'comment_'],
+    fieldName1_ fieldType1_ [constraint1_ constraint2_ ...] [comment 'comment_'],
+    fieldName2_ fieldType2_ [constraint1_ constraint2_ ...] [comment 'comment_'],
+    fieldName3_ fieldType3_ [constraint1_ constraint2_ ...] [comment 'comment_'],
     ...
-    fieldNamen_ fieldTypen_ [comment 'comment_']
+    fieldNamen_ fieldTypen_ [constraint1_ constraint2_ ...] [comment 'comment_']
 )[comment 'comment_'];
-``
+```
 创建表  
 
 ##### 数据类型
@@ -94,8 +94,12 @@ create table tableName_(
 > Data Query Language
 
 ```
-select [distinct] fileName1_ [AS nickName1_],fileName2_ [AS nickName2_],... from tableName_ [where condition_] 
-[group by fileName_] [having condition_] [order by fieldName1_ asc,fieldName2_ desc,...] [limit number1_,number2_];
+select [distinct] fileName1_ [AS nickName1_],fileName2_ [AS nickName2_],...
+from tableName_ [where condition_] 
+[group by fileName_] 
+[having condition_] 
+[order by fieldName1_ asc,fieldName2_ desc,...] 
+[limit number1_,number2_];
 
 ```
 

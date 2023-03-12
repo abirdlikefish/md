@@ -84,6 +84,10 @@
 
 ---
 
+## chmod
+>
+更改权限
+
 ## mkdir
 > make directory
 
@@ -223,35 +227,3 @@
 
 - 结束命令行
 
-
-do
-    {
-        fputs(sentence2[1],fpout);
-        fputs(sentence1[flag],fpout);
-        fputs(sentence2[2],fpout);
-
-        char midData=getc(fpin);
-        while(midData=='\n'||midData==' ')
-        {
-            midData=getc(fpin);
-        }
-        *midName=getc(fpin);
-
-        fgets(midName+1,20,fpin);
-        if(strlen(midName+1)==19)
-        {
-            fputs(sentence2[5],fpout);
-
-            if(midName[strlen(midName)-1]!='\n')
-            {
-                char midData=getc(fpin);
-                while(midData!='\n')
-                    midData=getc(fpin);
-
-            }
-
-            continue;
-        }
-        break;
-    }
-    while(1);

@@ -34,6 +34,9 @@ new item 创建新文件
 - pause
 按键继续
 
+- start  
+打开对应的图形界面  
+
 - $Host.UI.RawUI.WindowSize
 
 - $Host.UI.RawUI.BufferSize
