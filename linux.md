@@ -1,6 +1,5 @@
 # linux 命令行
 
-
 ``ctrl + alt + T``  
 打开终端  
 

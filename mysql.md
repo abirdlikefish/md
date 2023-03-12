@@ -43,10 +43,10 @@ create table tableName_(
 |double     |8 bytes|double(m,d)
 |decimal||
 
-![](sqlnote1.png)  
+![](.\mysqlNotepicture\mysqlNote1.png)  
 
 
-![](sqlnote2.png)  
+![](.\mysqlNotepicture\mysqlNote2.png)  
 
 #### 修改
 `alter table tableName_ add fieldName_ fieldType_ field [comment 'comment_'] [constraint_];` 添加字段
@@ -103,8 +103,8 @@ from tableName_ [where condition_]
 
 ```
 
-![](sqlnote3.png)  
-![](sqlnote4.png)  
+![](.\mysqlNotepicture\mysqlNote3.png)  
+![](.\mysqlNotepicture\mysqlNote4.png)  
 
 ## DCL
 > Data Control Language
@@ -116,4 +116,4 @@ from tableName_ [where condition_]
 `grant permissions_ on databaseName_.tableName_ to 'username_'@'hostname_';`    授予权限  
 `revoke permissions_ on databaseName_.tableName_ to 'username_'@'hostname_';`    删除权限  
 
-![](sqlnote5.png)  
+![](.\mysqlNotepicture\mysqlNote5.png)  
