@@ -13,6 +13,9 @@
 
 ## 提交文件
 
+
+` git add -A `  添加全部  
+` git add -p `  选择添加  
 ` git add helloworld.cpp `  
 ` git commit -m " your illustration " `  
 
@@ -46,6 +49,7 @@
 ` git clone git@github.com:abirdlikefish/snake.git `  克隆库到本地  
 
 ## 控制远程库
+` git fetch origin ` 更新本地的远程库信息  
 ` git push -u origin master ` 将本地库master分支推送到origin  
 ` git push origin master ` 之后推送不用加-u  
 ` git remote ` 查看远程库信息  
