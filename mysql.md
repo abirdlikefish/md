@@ -43,10 +43,10 @@ create table tableName_(
 |double     |8 bytes|double(m,d)
 |decimal||
 
-![](.\mysqlNotepicture\mysqlNote1.png)  
+![](/mysqlNotePicture/mysqlNote1.png)  
 
 
-![](.\mysqlNotepicture\mysqlNote2.png)  
+![](/mysqlNotePicture/mysqlNote2.png)  
 
 #### 修改
 `alter table tableName_ add fieldName_ fieldType_ field [comment 'comment_'] [constraint_];` 添加字段
@@ -95,16 +95,18 @@ create table tableName_(
 
 ```
 select [distinct] fileName1_ [AS nickName1_],fileName2_ [AS nickName2_],...
-from tableName_ [where condition_] 
+from tableName_ [where condition_]  
 [group by fileName_] 
 [having condition_] 
 [order by fieldName1_ asc,fieldName2_ desc,...] 
-[limit number1_,number2_];
+[limit number1_,number2_];      -- (number1_,number1_+number2_) number1_>=0  
 
 ```
 
-![](.\mysqlNotepicture\mysqlNote3.png)  
-![](.\mysqlNotepicture\mysqlNote4.png)  
+>![](/mysqlNotePicture/mysqlNote3.png/)
+[where regex .*]  
+
+![](/mysqlNotePicture/mysqlNote4.png)  
 
 ## DCL
 > Data Control Language
@@ -116,4 +118,18 @@ from tableName_ [where condition_]
 `grant permissions_ on databaseName_.tableName_ to 'username_'@'hostname_';`    授予权限  
 `revoke permissions_ on databaseName_.tableName_ to 'username_'@'hostname_';`    删除权限  
 
-![](.\mysqlNotepicture\mysqlNote5.png)  
+![](/mysqlNotePicture/mysqlNote5.png)  
+
+
+## 函数
+>![](/mysqlNotePicture/mysqlNote6.png)  
+rtrim   去除右边空格  
+ltrim   去除左边空格  
+
+![](/mysqlNotePicture/mysqlNote7.png)  
+![](/mysqlNotePicture/mysqlNote8.png)  
+![](/mysqlNotePicture/mysqlNote9.png)  
+
+## 约束
+![](/mysqlNotePicture/mysqlNote10.png)  
+

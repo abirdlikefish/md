@@ -181,6 +181,9 @@
 ` cp filename1 filename2 -r `
 复制文件夹
 
+## display
+- 打开图片  
+
 ## > 
 - 重定向
 
