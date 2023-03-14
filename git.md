@@ -26,6 +26,7 @@
 
 ## 修改
 
+`git mv helloworld.cpp hello.cpp`   移动文件  
 ` git reset --hard HEAD^ `  退回上个版本  
 ` git reset --hard HEAD^^ ` 退回上上个版本  
 ` git reset --hard HEAD~2 ` 退回上上个版本  
