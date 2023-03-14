@@ -131,5 +131,8 @@ ltrim   去除左边空格
 ![](/mysqlNotePicture/mysqlNote9.png)  
 
 ## 约束
-![](/mysqlNotePicture/mysqlNote10.png)  
+>![](/mysqlNotePicture/mysqlNote10.png)  
+auto_increment  自增  
+
+`alter table tableName_ add constraint foreignKeyName_ foreign key (childFileName_) references parentTableName_(parentFileName_);`  添加外键  
 
