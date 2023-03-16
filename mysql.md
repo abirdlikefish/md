@@ -27,7 +27,7 @@ create table tableName_(
     fieldName3_ fieldType3_ [constraint1_ constraint2_ ...] [comment 'comment_'],
     ...
     fieldNamen_ fieldTypen_ [constraint1_ constraint2_ ...] [comment 'comment_']
-)[comment 'comment_'];
+)engine=INNODB [comment 'comment_'];
 ```
 创建表  
 
