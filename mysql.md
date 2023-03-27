@@ -172,3 +172,19 @@ auto_increment  自增
 `set [session|global] transaction isolation level {read uncommitted | read committed | repeatable read | serializable };`   设置事务提交等级  
 ![](/mysqlNotePicture/mysqlNote11.png) 
 
+
+## 引擎
+
+![](/mysqlNotePicture/mysqlNote12.png)  
+
+## 存储结构
+![](/mysqlNotePicture/mysqlNote13.png)  
+
+
+## 索引
+
+`create [unique|fulltext] index indexName_ on tableName_ (fileName1_,...);`  创建索引  
+
+`show index from tableName_;`    查询索引  
+
+`drop index indexName_ on tableName_;`   删除索引  
