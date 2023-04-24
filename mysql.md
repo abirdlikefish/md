@@ -27,7 +27,7 @@ create table tableName_(
     fieldName3_ fieldType3_ [constraint1_ constraint2_ ...] [comment 'comment_'],
     ...
     fieldNamen_ fieldTypen_ [constraint1_ constraint2_ ...] [comment 'comment_']
-)[comment 'comment_'];
+)engine=INNODB [comment 'comment_'];
 ```
 创建表  
 
@@ -50,7 +50,7 @@ create table tableName_(
 
 #### 修改
 `alter table tableName_ add fieldName_ fieldType_ field [comment 'comment_'] [constraint_];` 添加字段
-`alter table tableName_ modify fieldName_ newFieldType_` 修改数据类型  
+;`alter table tableName_ modify fieldName_ newFieldType_` 修改数据类型  
 `alter table tableName_ change oldFieldName_ newFieldName_ fieldType_ [comment 'comment_'] [constraint_];`  修改字段名与类型  
 `alter table tableName_ rename to newTableName_; ` 修改表名  
 
@@ -108,6 +108,28 @@ from tableName_ [where condition_]
 
 ![](/mysqlNotePicture/mysqlNote4.png)  
 
+## 多表查询  
+
+- 多表关系  
+1-n     1<-n  
+1-1     1->1  
+n-n     n<-m->n  
+
+- 多表查询  
+`select...from tableName1_ nickName1_,tableName2_ nickName2_... where ...;  `
+`select...from tableName1_ nickName1_ [inner] join tableName2_ nickName2_ on condition_ ...;`  
+`select...from tableName1_ nickName1_ left join tableName2_ nickName2_ on condition_ ...;`  
+`select...from tableName1_ nickName1_ right join tableName2_ nickName2_ on condition_ ...;`  
+
+- 联合查询 
+```
+select ...
+union [all]  
+select ...;
+```
+
+
+
 ## DCL
 > Data Control Language
 
@@ -136,3 +158,33 @@ auto_increment  自增
 
 `alter table tableName_ add constraint foreignKeyName_ foreign key (childFileName_) references parentTableName_(parentFileName_);`  添加外键  
 
+## 事务
+
+`select @@autocommit;`  查看事务提交方式  
+`set @@autocommit=0;`   设置是否(1/0)自动提交  
+
+`begin;`    `start transaction;`    开启事务  
+
+`commit;` 提交事务  
+`rollback;`   回滚事务  
+
+`select @@transaction_isolation;`   查看事务提交等级  
+`set [session|global] transaction isolation level {read uncommitted | read committed | repeatable read | serializable };`   设置事务提交等级  
+![](/mysqlNotePicture/mysqlNote11.png) 
+
+
+## 引擎
+
+![](/mysqlNotePicture/mysqlNote12.png)  
+
+## 存储结构
+![](/mysqlNotePicture/mysqlNote13.png)  
+
+
+## 索引
+
+`create [unique|fulltext] index indexName_ on tableName_ (fileName1_,...);`  创建索引  
+
+`show index from tableName_;`    查询索引  
+
+`drop index indexName_ on tableName_;`   删除索引  
