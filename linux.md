@@ -3,6 +3,10 @@
 ``ctrl + alt + T``  
 打开终端  
 
+## xdg-open  
+打开文件
+`` xdg-open picture.png ``  
+
 ## cd
 > change directory
 - **进入文件**
