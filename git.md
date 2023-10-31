@@ -55,10 +55,11 @@
 ` git push origin master ` 之后推送不用加-u  
 ` git remote ` 查看远程库信息  
 ` git remote -v ` 查看远程库详细信息  
-` git clone git@github.com:abirdlikefish/snake.git `  克隆库到本地  
+` git clone git@github.com:abirdlikefish/snake.git `  克隆库到本地 只有默认分支  
 ` git checkout -b dev origin/dev `  创建远程`origin`的`dev`分支到本地
 ` git pull ` 抓取远程库  
-` git branch --set-upstream-to <branch-name> origin/<branch-name> ` 建立本地分支与远程库分支联系  
+` git branch --set-upstream-to=origin/<branch-name> <branch-name> ` 建立本地分支与远程库分支联系  
+` git branch -vv ` 查询本地分支与远程分支的映射关系  
 
 
 
@@ -80,6 +81,9 @@
 ` git stash drop `  删除储存的工作区  
 ` git cherry-pick commitID `  将commitID做的修改复制到当前分支  
 ` git rebase `  整理分叉提交历史  
+` git checkout -b dev origin/dev `  创建远程`origin`的`dev`分支到本地  
+` git branch --set-upstream-to=origin/<branch-name> <branch-name> ` 建立本地分支与远程库分支联系  
+` git branch -vv ` 查询本地分支与远程分支的映射关系  
 
 
 ## 标签
